@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="music-app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h2 class="logo">🎵 Music</h2>
+
+            <nav>
+                <a href="#" class="active">🏠 Home</a>
+                <a href="#">❤️ Favorites</a>
+                <a href="#">🎧 Recently Played</a>
+                <a href="#">📀 Albums</a>
+                <a href="#">🎤 Artists</a>
+            </nav>
+
+            <div class="playlist-section">
+                <h3>My Playlist</h3>
+
+                <a href="#">🔥 Workout</a>
+                <a href="#">🌙 Relax</a>
+                <a href="#">🚗 Road Trip</a>
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <!-- Header -->
+            <header class="header">
+
+                <div>
+                    <h1>Good Evening 👋</h1>
+                    <p>Enjoy your favorite music</p>
+                </div>
+
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search songs..."
+                    >
+                    🔍
+                </div>
+
+            </header>
+
+
+            <!-- Featured Section -->
+            <section class="featured">
+
+                <div class="featured-text">
+                    <p>FEATURED PLAYLIST</p>
+
+                    <h2>Feel The Music</h2>
+
+                    <p>
+                        Discover your favorite songs and enjoy
+                        unlimited music.
+                    </p>
+
+                    <button onclick="playSong(0)">
+                        ▶ Play Now
+                    </button>
+                </div>
+
+            </section>
+
+
+            <!-- Songs -->
+            <section class="songs-section">
+
+                <div class="section-title">
+                    <h2>Popular Songs</h2>
+                    <span>View All</span>
+                </div>
+
+                <div id="songList">
+
+                    <div class="song" data-name="Summer Vibes">
+
+                        <img
+                            src="https://picsum.photos/80?random=1"
+                            alt="Song"
+                        >
+
+                        <div class="song-info">
+                            <h3>Summer Vibes</h3>
+                            <p>Dream Music</p>
+                        </div>
+
+                        <span class="duration">3:42</span>
+
+                        <button onclick="playSong(0)">
+                            ▶
+                        </button>
+
+                    </div>
+
+
+                    <div class="song" data-name="Night Drive">
+
+                        <img
+                            src="https://picsum.photos/80?random=2"
+                            alt="Song"
+                        >
+
+                        <div class="song-info">
+                            <h3>Night Drive</h3>
+                            <p>Alan Walker</p>
+                        </div>
+
+                        <span class="duration">4:12</span>
+
+                        <button onclick="playSong(1)">
+                            ▶
+                        </button>
+
+                    </div>
+
+
+                    <div class="song" data-name="Lost Stars">
+
+                        <img
+                            src="https://picsum.photos/80?random=3"
+                            alt="Song"
+                        >
+
+                        <div class="song-info">
+                            <h3>Lost Stars</h3>
+                            <p>Adam Levine</p>
+                        </div>
+
+                        <span class="duration">4:25</span>
+
+                        <button onclick="playSong(2)">
+                            ▶
+                        </button>
+
+                    </div>
+
+
+                    <div class="song" data-name="Dream World">
+
+                        <img
+                            src="https://picsum.photos/80?random=4"
+                            alt="Song"
+                        >
+
+                        <div class="song-info">
+                            <h3>Dream World</h3>
+                            <p>Imagine Music</p>
+                        </div>
+
+                        <span class="duration">3:55</span>
+
+                        <button onclick="playSong(3)">
+                            ▶
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+        <!-- Music Player -->
+        <div class="music-player">
+
+            <div class="current-song">
+
+                <img
+                    id="playerImage"
+                    src="https://picsum.photos/80?random=1"
+                    alt="Current Song"
+                >
+
+                <div>
+                    <h3 id="playerTitle">Summer Vibes</h3>
+                    <p id="playerArtist">Dream Music</p>
+                </div>
+
+            </div>
+
+
+            <div class="player-controls">
+
+                <div class="buttons">
+
+                    <button onclick="previousSong()">⏮</button>
+
+                    <button
+                        class="play-button"
+                        id="playButton"
+                        onclick="togglePlay()"
+                    >
+                        ▶
+                    </button>
+
+                    <button onclick="nextSong()">⏭</button>
+
+                </div>
+
+
+                <div class="progress-container">
+
+                    <span id="currentTime">0:00</span>
+
+                    <input
+                        type="range"
+                        id="progressBar"
+                        value="0"
+                        min="0"
+                        max="100"
+                    >
+
+                    <span id="totalTime">3:42</span>
+
+                </div>
+
+            </div>
+
+
+            <div class="volume">
+
+                🔊
+
+                <input
+                    type="range"
+                    id="volumeBar"
+                    min="0"
+                    max="100"
+                    value="70"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
