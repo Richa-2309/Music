@@ -58,6 +58,4 @@ The application uses JavaScript to manage the music player state.
 
 Clicking the play button loads the selected song information into the music player.
 
-### Next / Previous
 
-The next a
