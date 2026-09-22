@@ -6,12 +6,12 @@ const songs = [
         duration: "3:42"
     },
 
-    {
-        title: "Night Drive",
-        artist: "Alan Walker",
-        image: "https://picsum.photos/80?random=2",
-        duration: "4:12"
-    },
+    // {
+    //     title: "Night Drive",
+    //     artist: "Alan Walker",
+    //     image: "https://picsum.photos/80?random=2",
+    //     duration: "4:12"
+    // },
 
     {
         title: "Lost Stars",
