@@ -54,8 +54,16 @@ That's it! No installation or backend server is required.
 
 The application uses JavaScript to manage the music player state.
 
+
 ### Play Song
 
 Clicking the play button loads the selected song information into the music player.
+Clicking the play button loads the selected song information into the music player.Clicking the play button loads the selected song information into the music player.
+
+
+
+
+
+
 
 
