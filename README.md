@@ -50,6 +50,7 @@ git clone https://github.com/your-username/music-system.git
 
 That's it! No installation or backend server is required.
 
+
 ## 🎧 How It Works
 
 The application uses JavaScript to manage the music player state.
@@ -58,7 +59,10 @@ The application uses JavaScript to manage the music player state.
 ### Play Song
 
 Clicking the play button loads the selected song information into the music player.
-Clicking the play button loads the selected song information into the music player.Clicking the play button loads the selected song information into the music player.
+
+
+
+
 
 
 
