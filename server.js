@@ -20,11 +20,13 @@ server.get("/", (req, res) => {
 });
 
 
+
+//comenting
 // Start server
-server.listen(PORT, () => {
+// server.listen(PORT, () => {
 
-    console.log(
-        `Music System running at http://localhost:${PORT}`
-    );
+//     console.log(
+//         `Music System running at http://localhost:${PORT}`
+//     );
 
-});
+// });
